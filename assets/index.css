@@ -14,20 +14,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #272829;
+    background-color: #1D2125;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .header img.img-profile {
     border-radius: 156px;
-    border: 6px solid #212423;
+    border: 3px solid #149ddd;
     width: 14rem;
     height: 14rem;
 }
 
 .header h1 {
-    color: #FFF;
+    text-transform: uppercase;
+    color: #fff;
     font-family: 'Saira Extra Condensed', sans-serif;
     font-size: 76.905px;
     font-weight: 900;
@@ -36,6 +37,18 @@
 
 .header .last-name {
     color: #149ddd;
+}
+
+.header .contact p {
+    margin-top: -15px;
+    color: #149ddd;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+}
+
+.header .contact p span.mail {
+    color: #149ddd;
+    font-weight: bold
 }
 
 .header  .all-images-profile {
@@ -76,11 +89,16 @@
     border-bottom: 1px solid #149ddd;
     cursor: pointer;
 }
-/*media*/
 
+/*media*/
 @media (max-width: 768px) {
     .header h1 {
         font-size: 50px;
+    }
+
+    .header .contact p {
+        margin-top: -10px;
+        text-align: center;
     }
 
     .header img.img-profile {
@@ -104,7 +122,6 @@
     justify-content: center;
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 100px;
 }
 
 .section .title {
