@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elivelton Gonçalves da Silva</title>
+    <link rel="stylesheet" href="assets/formation.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="assets/index.css">
-    <title>Document</title>
 </head>
-
 <body>
     <header class="header">
         <!-- start menu -->
@@ -29,7 +26,9 @@
 
         <!-- start profile -->
         <div class="profile">
-            <img class="img-profile" src="assets/img/perfil.jpeg" alt="profile">
+            <a routerLink="/">
+                <img class="img-profile" src="assets/img/perfil.jpeg" alt="profile">
+            </a>
             <h1>Elivelton <span class="last-name">Gonçalves</span></h1>
             <div class="contact">
                 <p>
@@ -54,29 +53,26 @@
          <!-- end profile -->
     </header>
 
-    <!-- start section -->
-    <section class="section" id="about">
+    <section class="section" id="formation">
         <div class="title">
             <h1>
-                <span>SOBRE</span>
+                <span>Formação</span>
             </h1>
             <div class="line"></div>
         </div>
         <div class="content">
-            <p>
-                Iniciei minha carreira como desenvolvedor <strong>FULL STACK</strong> Freelancer com a criação de pequenos sites e sistemas.
-            </p>
-            <p>
-                Hoje em dia atuo profissionalmente como desenvolvedor <strong>Backend</strong> d PHP, visando sempre as boas práticas de programação e em busca 
-                de novos desafios para aprimoramento contínuo de novas habilidades e conhecimentos.
-            </p>
-            <p>
-                A maneira que posso me definir como profissional de tecnologia seria com as principais características: 
-                <strong>Dedicação, Estudo Constante, Persistência, Esforçado e Muita Vontade de Aprender mais e mais.</strong>
-            </p>
+            <div class="title-1">
+                <h2>Unifio</h2>
+                <h3>Ourinhos - SP</h3>
+                <p>
+                   Sistemas de Informação.
+                </p>
+            </div>
+            <div class="title-2">
+                <h4>Fevereiro 2011 - Dezembro 2015</h4>
+            </div>
         </div>
     </section>
-    <!-- end section -->
 
     <footer class="footer">
         <p>
@@ -93,5 +89,4 @@
         });
     </script>
 </body>
-
 </html>
