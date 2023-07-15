@@ -108,6 +108,7 @@ header nav ul li a:hover {
 /* end menu */
 
 /* start profile */
+/* start profile */
 .header .profile {
     text-align: center;
     background-size: cover;
@@ -203,6 +204,7 @@ header nav ul li a:hover {
 
 /* end profile */
 
+
 /* start section */
 .section {
     display: flex;
@@ -226,19 +228,82 @@ header nav ul li a:hover {
     font-family: 'Saira Extra Condensed', sans-serif;
 }
 
-.section .content p {
+.section .content {
+    margin-bottom: 100px;
+}
+
+.section .content .title-1 h2 {
+    margin-top: -8px;
+    color: #212423;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 32px;
+}
+
+.section .content .title-1 h3 {
+    margin-top: -10px;
+    color: #6c757d;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 24px;
+}
+
+.section .content .title-2 h4 {
+    color: #173b6c;
     font-family: 'Mulish', sans-serif;
-    text-align: center;
     font-size: 16px;
-    color: #272829;
-    margin: 0 0 15px 0;
+}
+
+.section .content {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+}
+
+.section .content .title-1 h2, h3 {
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.section .content .title-1 p {
+    margin-top: 20px;
+    font-family: 'Mulish', sans-serif;
+    text-align: justify;
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.section .content .title-1 ul {
+    margin-top: 8px;
+}
+
+.section .content .title-1 ul li {
+    list-style: none;
+    font-family: 'Mulish', sans-serif;
+    /* text-align: left; */
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.section .content .title-2 {
+    width: 100%;
+    text-align: right;
+}
+
+/*experience media*/
+@media (max-width: 768px) {
+    .section .content {
+        flex-direction: column;
+    }
+
+    .section .content .title-2 {
+        text-align: center;
+        margin-top: 5px;
+    }
 }
 
 /* start section */
 
 /* start footer */
 .footer {
-    margin-top: 100px;
     background: rgb(46,46,47);
     background: linear-gradient(90deg, rgba(46,46,47,1) 0%, rgba(31,31,33,1) 35%, rgba(0,0,0,1) 100%);
     text-align: center;
