@@ -5,46 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elivelton Gonçalves da Silva</title>
     <link rel="stylesheet" href="assets/trajectory.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/libs_import/fontawesome640/css/all.min.css">
 </head>
 <body>
     <header class="header">
         <!-- start menu -->
         <nav>
             <ul>
-                <li><a href="index.html#about">Sobre</a></li>
-                <li><a href="resume.html#resume">Resume</a></li>
-                <li><a href="formation.html#formation">Formação</a></li>
-                <li><a href="trajectory.html#trajectory">Trajetória</a></li>
-                <li><a href="#">Skills</a></li>
+                <li>
+                    <a href="index.html#about">
+                        <i class="fa-solid fa-house icons-menu"></i>Sobre
+                    </a>
+                </li>
+                <li>
+                    <a href="resume.html#resume">
+                        <i class="fa-solid fa-user icons-menu"></i>Resume
+                    </a>
+                </li>
+                <li>
+                    <a href="formation.html#formation">
+                        <i class="fa-solid fa-school icons-menu"></i>Formação
+                    </a>
+                </li>
+                <li>
+                    <a href="trajectory.html#trajectory">
+                        <i class="fa-solid fa-check icons-menu"></i>Trajetória
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-microchip icons-menu"></i>Skills
+                    </a>
+                </li>
             </ul>
         </nav>
         <div class="menu-toggle">
-            <i class="fa fa-bars" aria-hidden="true"></i>
+            <i class="fa-brands fa-elementor"></i>
         </div>
         <!-- end menu -->
 
         <!-- start profile -->
         <div class="profile">
-            <a routerLink="/">
-                <img class="img-profile" src="assets/img/perfil.jpeg" alt="profile">
-            </a>
+            <img class="img-profile" src="assets/img/perfil.jpeg" alt="profile">
             <h1>Elivelton <span class="last-name">Gonçalves</span></h1>
             <div class="contact">
                 <p>
-                    Joaquim Távora - PR <span class="point">&nbsp;</span> (43) +55 (43) 9.9645-4525 <span class="point">&nbsp;</span> 
-                    <span class="mail">eliveltongsoficial@gmail.com</span>    
+                    <span><i class="fa-solid fa-city icon-locale"></i>Joaquim Távora - PR</span>
+                    <span><i class="fa-brands fa-whatsapp icon-locale"></i>(43) +55 (43) 9.9645-4525</span>
+                    <span class="mail"><i class="fa-regular fa-envelope icon-locale"></i>eliveltongsoficial@gmail.com</span>    
                 </p>
             </div>
             <div class="all-images-profile">
                 <div class="img">
                     <a href="https://github.com/EliveltonEGS" target="_blank">
-                        <img src="assets/img/github.png" alt="github">
+                        <i class="fa-brands fa-github image-profile"></i>
                     </a>
                 </div>
                 <div class="img">
                     <a href="https://linkedin.com/in/elivelton-gonçalves-silva-02bb13100" target="_blank">
-                        <img src="assets/img/linkedin.png" alt="github">
+                        <i class="fa-brands fa-linkedin image-profile"></i>
                     </a>
                 </div>
             </div>
@@ -140,6 +159,7 @@
           </p>
     </footer>
 
+    <script src="assets/libs_import/fontawesome640/js/all.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script>
         $(document).ready(function () {
