@@ -155,11 +155,6 @@ header nav ul li a:hover {
     color: #fff;
 }
 
-.header .profile .contact p span.mail {
-    color: #149ddd;
-    font-weight: bold;
-}
-
 .header .profile  .all-images-profile {
     margin-top: 15px;
     display: flex;
@@ -168,7 +163,7 @@ header nav ul li a:hover {
 }
 
 .header .profile .all-images-profile .img {
-    background-color: #149ddd;
+    /* background-color: #149ddd; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,12 +213,15 @@ header nav ul li a:hover {
 .section .title {
     margin: 100px 0 100px 0;
 }
+
 .section .title h1 {
-    color: #173b6c;
+    color: #149ddd;
 }
 
 .section .title h1 span {
-    border-bottom: 2px solid #149DDD;
+    border-top: 5px solid #149ddd;
+    border-bottom: 5px solid #149ddd;
+    border-radius: 30px;
     font-size: 70px;
     font-family: 'Saira Extra Condensed', sans-serif;
 }
@@ -234,14 +232,14 @@ header nav ul li a:hover {
 
 .section .content .title-1 h2 {
     margin-top: -8px;
-    color: #212423;
+    color: #173b6c;
     font-family: 'Saira Extra Condensed', sans-serif;
     font-size: 32px;
 }
 
 .section .content .title-1 h3 {
     margin-top: -10px;
-    color: #6c757d;
+    color: #149ddd;
     font-family: 'Saira Extra Condensed', sans-serif;
     font-size: 24px;
 }
@@ -314,3 +312,45 @@ header nav ul li a:hover {
 }
 
 /* end footer */
+
+/*start configs icons*/
+/* icons menu */
+.header nav ul li a .icons-menu{ 
+    margin-right: 5px;
+    color: #fff;
+}
+
+.header .profile .contact p .icon-locale {
+    margin-right: 3px;
+    color: #149DDD;
+}
+
+.header .profile .all-images-profile .img .image-profile {
+    color: #fff;
+    font-size: 40px;
+}
+
+.section .title .title-page {
+    font-size: 50px;
+    margin-bottom: -25px;
+    color: #173b6c;
+}
+
+.section .title .line {
+    margin-top: -20px;
+}
+
+
+/* media */
+@media (max-width: 768px) {
+    .header .profile .contact p {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .header .profile .contact p span {
+        margin: 3px;
+    }
+}
+/*start configs icons*/
