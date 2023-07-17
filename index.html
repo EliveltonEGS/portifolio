@@ -11,28 +11,22 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <!-- start menu -->
+        <div class="logo">
+            <img src="assets/img/perfil.jpeg" alt="perfil">
+            <p>Elivelton</p>
+        </div>
         <nav>
             <ul>
                 <li>
-                    <a href="index.html#about">
-                        <i class="fa-solid fa-house icons-menu"></i>Sobre
+                    <a href="index.html#home">
+                        <i class="fa-solid fa-house icons-menu"></i>Home
                     </a>
                 </li>
                 <li>
-                    <a href="resume.html#resume">
-                        <i class="fa-solid fa-user icons-menu"></i>Resume
-                    </a>
-                </li>
-                <li>
-                    <a href="formation.html#formation">
-                        <i class="fa-solid fa-school icons-menu"></i>Formação
-                    </a>
-                </li>
-                <li>
-                    <a href="trajectory.html#trajectory">
-                        <i class="fa-solid fa-check icons-menu"></i>Trajetória
+                    <a href="index.html#tecnologies">
+                        <i class="fa-solid fa-code icons-menu"></i>Tecnologias
                     </a>
                 </li>
             </ul>
@@ -42,66 +36,51 @@
         </div>
         <!-- end menu -->
 
-        <!-- start profile -->
-        <div class="profile">
-            <img class="img-profile" src="assets/img/perfil.jpeg" alt="profile">
-            <h1>Elivelton <span class="last-name">Gonçalves</span></h1>
-            <div class="contact">
-                <p>
-                    <span><i class="fa-solid fa-city icon-locale"></i>Joaquim Távora - PR</span>
-                    <span><i class="fa-brands fa-whatsapp icon-locale"></i>(43) +55 (43) 9.9645-4525</span>
-                    <span class="mail"><i class="fa-regular fa-envelope icon-locale"></i>eliveltongsoficial@gmail.com</span>    
-                </p>
-            </div>
-            <div class="all-images-profile">
-                <div class="img">
-                    <a href="https://github.com/EliveltonEGS" target="_blank">
-                        <i class="fa-brands fa-github image-profile"></i>
-                    </a>
-                </div>
-                <div class="img">
-                    <a href="https://linkedin.com/in/elivelton-gonçalves-silva-02bb13100" target="_blank">
-                        <i class="fa-brands fa-linkedin image-profile"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
          <!-- end profile -->
     </header>
-
-    <!-- start section -->
-    <section class="section" id="about">
-        <div class="title">
-            <h1>
-                <span>SOBRE</span>
-            </h1>
-            <div class="line"></div>
-        </div>
-        <div class="content">
-            <p>
-                Iniciei minha carreira como desenvolvedor <strong>FULL STACK</strong> Freelancer com a criação de pequenos sites e sistemas.
-            </p>
-            <p>
-                Hoje em dia atuo profissionalmente como desenvolvedor <strong>Backend</strong> PHP, visando sempre as boas práticas de programação e em busca 
-                de novos desafios para aprimoramento contínuo de novas habilidades e conhecimentos.
-            </p>
-            <p>
-                A maneira que posso me definir como profissional de tecnologia seria com as principais características: 
-                <strong>Dedicação, Estudo Constante, Persistência, Esforçado e Muita Vontade de Aprender mais e mais.</strong>
-            </p>
+    <section class="top">
+        <h4>Olá! Eu sou</h4>
+        <h1>Elivelton Gonçalves</h1>
+        <h3>Full Stack Developer</h3>
+        <div class="all-images-profile">
+            <div class="img">
+                <a href="https://github.com/EliveltonEGS" target="_blank">
+                    <i class="fa-brands fa-github image-profile"></i>
+                </a>
+            </div>
+            <div class="img">
+                <a href="https://linkedin.com/in/elivelton-gonçalves-silva-02bb13100" target="_blank">
+                    <i class="fa-brands fa-linkedin image-profile"></i>
+                </a>
+            </div>
         </div>
     </section>
-    <!-- end section -->
 
-    <footer class="footer">
-        <p>
-            &copy; Elivelton Gonçalves da Silva
-          </p>
-    </footer>
+    <section class="tecnologies" id="tecnologies">
+        <div class="title">
+            <div class="text-title">
+                <h1>Tecnologias</h1>
+            </div>
+        </div>
+        <div class="all-tec">
+            <div class="sub-tec">
+                <div style="background-color: #41a3d1;"><i class="fa-brands fa-java"></i><p class="title-tec">PHP</p></div>
+                <div style="background-color: #f9322c;"><i class="fa-brands fa-laravel"></i><p class="title-tec">Laravel</p></div>
+                <div style="background-color: #ff6600;"><i class="fa-brands fa-java"></i><p class="title-tec">Java</p></div>
+            </div>
+            <div class="sub-tec">
+                <div style="background-color: #ffd000;"><i class="fa-brands fa-square-js"></i><p class="title-tec">Javascript</p></div>
+                <div style="background-color: #00dd00;"><i class="fa-brands fa-vuejs"></i><p class="title-tec">Vuejs</p></div>
+                <div style="background-color: #c20600;"><i class="fa-brands fa-angular"></i><p class="title-tec">Angular</p></div>
+            </div>
+        </div>
+    </section>
 
+    <script src="assets/libs_import/animejs/anime.min.js"></script>
+    <script src="assets/anime.js"></script>
     <script src="assets/libs_import/fontawesome640/js/all.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="assets/ancora.js"></script>
     <script>
         $(document).ready(function () {
             $('.menu-toggle').click(function () {
