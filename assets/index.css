@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tektur:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@100&display=swap');
 
 * {
     margin: 0;
@@ -42,7 +42,7 @@ header .logo img {
 
 header .logo p {
     margin-left: 8px;
-    color: #fff;
+    color: #149ddd;
     font-family: 'Lilita One', sans-serif;
 }
 
@@ -66,7 +66,7 @@ header nav ul li a {
     height: 50px;
     line-height: 50px;
     padding: 0 20px;
-    color: #fff;
+    color: #149ddd;
     text-decoration: none;
     display: block;
     font-size: 16px;
@@ -74,20 +74,33 @@ header nav ul li a {
 }
 
 header nav ul li a:hover{
-    background-color: #0b7aad;
+    background-color: #f7fcff;
+    border-left: 3px solid #149ddd;
+    border-right: 3px solid #149ddd;
 }
 
 .menu-toggle {
-    color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    margin-top: -870px;
+    color: #091a22;
     float: right;
     line-height: 50px;
     font-size: 24px;
     cursor: pointer;
     display: none;
+    padding-left: 5px;
+    background-color: #0b7aad;
+}
+
+.menu-toggle .menu {
+    margin-left: 5px;
+    padding: 5px;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 20px;
 }
 
 @media (max-width: 991px) {
-
     header .logo {
         display: none;
     }
@@ -95,7 +108,6 @@ header nav ul li a:hover{
     header nav ul {
         background-color: #091a22;
         /* background: linear-gradient(90deg, rgba(46,46,47,1) 0%, rgba(31,31,33,1) 35%, rgba(0,0,0,1) 100%); */
-        height: 100vh;
     }
 
     .header {
@@ -134,7 +146,7 @@ header nav ul li a:hover{
 /* icons menu */
 .header nav ul li a .icons-menu { 
     margin-right: 5px;
-    color: #fff;
+    color: #149ddd;
 }
 
 .header .profile .contact p .icon-locale {
@@ -216,6 +228,8 @@ section.top img {
  /* start media */
 @media (max-width: 991px) {
     section.top {
+        width: 80%;
+        margin: 0 auto;
         text-align: center;
     }
 
@@ -228,18 +242,105 @@ section.top img {
 
 /* end section.top */
 
+/* start section.projects */
+selection.projects {
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+section.projects .title .text-title h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 100px;
+    font-family: 'Tektur', cursive;
+    -webkit-text-stroke: 1px #149DDD;
+    -webkit-text-fill-color: #0d1113;
+    text-align: center;
+}
+
+section.projects .all-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    /* padding: 20px 0 20px 0; */
+}
+
+section.projects .all-project .project-col1 {
+    width: 100%;
+    text-align: center;
+}
+
+section.projects .all-project .project-col1 img {
+    border-radius: 2px;
+    width: 590px;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+    border: 2px solid #fff;
+}
+
+section.projects .all-project .project-col1 img:hover {
+	-webkit-filter: none;	
+	filter: none;	
+}
+
+section.projects .all-project .project-col2 h3 {
+    font-family: 'Tektur', cursive;
+    -webkit-text-stroke: 1px #149DDD;
+    -webkit-text-fill-color: #0d1113;
+    font-size: 25px;
+}
+
+section.projects .all-project .project-col2 p {
+    color: #dadada;
+    font-family: 'Victor Mono', monospace;
+    font-size: 14px;
+    text-align: justify;
+}
+
+section.projects .all-project .project-col2 h3, p {
+    text-align: center;
+    padding: 10px;
+}
+
+section.projects .all-project .project-col2 {
+    width: 100%;
+    text-align: justify;
+}
+
+/* start media */
+@media (max-width: 991px) {
+    section.projects .all-project {
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    section.projects .all-project .project-col1 img {
+        width: 100%;
+    }
+}
+
+/* end section.projects */
+
+
+/* start section.tecnologies */
 selection.tecnologies {
     width: 100%;
     margin: 0 auto;
     height: 100vh;
 }
 
-/* start section.tecnologies */
 section.tecnologies .title .text-title h1 {
     font-size: 80px;
     text-transform: uppercase;
     font-weight: bold;
-    margin-bottom: 100px;
+    margin: 100px 0 100px 0;
     font-family: 'Tektur', cursive;
     -webkit-text-stroke: 1px #149DDD;
     -webkit-text-fill-color: #0d1113;
@@ -390,7 +491,6 @@ section.tecnologies .all-tec .sub-tec {
 
 section.tecnologies .all-tec .sub-tec div {
     text-align: center;
-    /* border: 1px solid #fff; */
     width: 100%;
     padding: 70px;
     font-size: 25px;
