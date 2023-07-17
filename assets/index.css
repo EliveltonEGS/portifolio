@@ -207,7 +207,6 @@ section.top .all-images-profile .image-profile {
 
 section.top .all-images-profile .image-profile:hover {
     color: #fff;
-    transition: ;
 }
 
 section.top img {
@@ -246,6 +245,135 @@ section.tecnologies .title .text-title h1 {
     -webkit-text-fill-color: #0d1113;
     text-align: center;
 }
+
+/* start progress bar php */
+section.tecnologies .progress-bar {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+    color: #149DDD;
+    font-size: 16px;
+    font-family: 'Tektur', cursive;
+}
+
+section.tecnologies .progress-bar .percent {
+    display: flex;
+    width: 100%;
+}
+
+section.tecnologies .progress-bar .percent small {
+    color: #149DDD;
+    font-size: 12px;
+}
+
+section.tecnologies .progress-bar .percent .tec-percent {
+    width: 100%;
+    text-align: right;
+}
+
+/* php */
+section.tecnologies .progress-bar-php {
+    border-radius: 30px;
+    margin: 10px 0 10px 0;
+    height: 10px;
+    padding: 2px;
+    background-color: #ffffff;
+    display: flex;
+}
+
+section.tecnologies .progress-bar-php::before {
+    content: "";
+    width: 98%;
+    background-color: #149DDD;
+    border-radius: 30px;
+}
+
+/* laravel */
+section.tecnologies .progress-bar-laravel {
+    border-radius: 30px;
+    margin: 10px 0 10px 0;
+    height: 10px;
+    padding: 2px;
+    background-color: #ffffff;
+    display: flex;
+}
+
+section.tecnologies .progress-bar-laravel::before {
+    content: "";
+    width: 80%;
+    background-color: #149DDD;
+    border-radius: 30px;
+}
+
+/* Java */
+section.tecnologies .progress-bar-java {
+    border-radius: 30px;
+    margin: 10px 0 10px 0;
+    height: 10px;
+    padding: 2px;
+    background-color: #ffffff;
+    display: flex;
+}
+
+section.tecnologies .progress-bar-java::before {
+    content: "";
+    width: 50%;
+    background-color: #149DDD;
+    border-radius: 30px;
+}
+
+/* Javascript */
+section.tecnologies .progress-bar-javascript {
+    border-radius: 30px;
+    margin: 10px 0 10px 0;
+    height: 10px;
+    padding: 2px;
+    background-color: #ffffff;
+    display: flex;
+}
+
+section.tecnologies .progress-bar-javascript::before {
+    content: "";
+    width: 75%;
+    background-color: #149DDD;
+    border-radius: 30px;
+}
+
+/* vue */
+section.tecnologies .progress-bar-vue {
+    border-radius: 30px;
+    margin: 10px 0 10px 0;
+    height: 10px;
+    padding: 2px;
+    background-color: #ffffff;
+    display: flex;
+}
+
+section.tecnologies .progress-bar-vue::before {
+    content: "";
+    width: 90%;
+    background-color: #149DDD;
+    border-radius: 30px;
+}
+
+/* angular */
+section.tecnologies .progress-bar-angular {
+    border-radius: 30px;
+    margin: 10px 0 10px 0;
+    height: 10px;
+    padding: 2px;
+    background-color: #ffffff;
+    display: flex;
+}
+
+section.tecnologies .progress-bar-angular::before {
+    content: "";
+    width: 78%;
+    background-color: #149DDD;
+    border-radius: 30px;
+}
+
+/* end progress bar php */
 
 section.tecnologies .all-tec {
     display: flex;
